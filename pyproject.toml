@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tongue-tools"
+version = "0.0.0"
+description = "Utility tools for generative AI / large language models"
+authors = ["Brad Ito <phlogisticfugu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
