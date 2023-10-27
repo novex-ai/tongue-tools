@@ -5,16 +5,25 @@ description = "Utility tools for generative AI / large language models"
 authors = ["Brad Ito <phlogisticfugu@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [{include = "tongue_tools"}]
+repository = "https://github.com/novex-ai/tongue-tools"
+
+[tool.poetry.urls]
+Changelog = "https://github.com/novex-ai/tongue-tools/releases"
+Issues = "https://github.com/novex-ai/tongue-tools/issues"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.10.1"
 flake8 = "^5.0.4"
 pytest = "^7.4.3"
 mypy = "^1.6.1"
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311']
 
 [build-system]
 requires = ["poetry-core"]
